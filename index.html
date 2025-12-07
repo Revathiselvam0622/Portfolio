@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Revathi — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Revathi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center hero-card">
+        <!-- Left column -->
+        <div class="col-lg-6 col-md-12 p-4 text-center text-lg-start">
+          <img src="assets/photo.jpg" alt="Revathi" class="portrait mb-3" />
+          <h1>Revathi</h1>
+          <span class="role-badge">Web Designer</span>
+          <p class="mt-3 muted">
+            I craft accessible, pixel-perfect interfaces with Bootstrap and custom CSS—blending clarity, polish, and thoughtful UX.
+            I focus on modular layouts, responsive design, and seamless user experiences that feel complete and professional.
+          </p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start mt-3">
+            <a class="btn cta-btn cta-btn-solid" href="#">LinkedIn</a>
+            <a class="btn cta-btn cta-btn-outline" href="#">GitHub</a>
+            <a class="btn cta-btn cta-btn-outline" href="#">Resume</a>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-lg-6 col-md-12 p-4 bg-light" id="about">
+          <h2>About</h2>
+          <p>I design and build student-focused web experiences—fast, responsive, and inclusive.</p>
+          <ul class="list-unstyled">
+            <li><strong>Location:</strong> Tiruchendur, TN, India</li>
+            <li><strong>Email:</strong> you@example.com</li>
+            <li><strong>Website:</strong> yourwebsite.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="card-block">
+        <h3 class="section-title">Featured Projects</h3>
+        <p class="section-subtitle">Highlights from my recent work.</p>
+
+        <!-- Project 1 -->
+        <div class="mb-4">
+          <h5 class="fw-bold mb-1">Post Management System</h5>
+          <p class="mb-2">Responsive CRUD app with pagination, tag filtering, toast notifications, and empty state illustrations.</p>
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">Axios</span>
+            <span class="skill-badge">json-server</span>
+          </div>
+          <a href="https://your-demo-link.com" class="btn cta-btn cta-btn-solid me-2" target="_blank">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+          </a>
+          <a href="https://github.com/your-username/post-management-system" class="btn cta-btn cta-btn-outline" target="_blank">
+            <i class="bi bi-github me-1"></i> GitHub Code
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div>
+          <h5 class="fw-bold mb-1">Portfolio Website</h5>
+          <p class="mb-2">A responsive personal portfolio showcasing resume, LinkedIn, GitHub, and project demos.</p>
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">Vite</span>
+          </div>
+          <a href="https://your-portfolio-demo-link.com" class="btn cta-btn cta-btn-solid me-2" target="_blank">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+          </a>
+          <a href="https://github.com/your-username/portfolio-project" class="btn cta-btn cta-btn-outline" target="_blank">
+            <i class="bi bi-github me-1"></i> GitHub Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="card-block">
+        <h3 class="section-title">Skills</h3>
+        <p class="section-subtitle">Tools and stacks I use to build reliable, polished experiences.</p>
+        <div class="d-flex flex-wrap">
+          <span class="skill-badge">HTML5</span>
+          <span class="skill-badge">CSS3</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">Bootstrap</span>
+          <span class="skill-badge">React</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">OpenCV</span>
+          <span class="skill-badge">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="card-block">
+        <h3 class="section-title">Contact</h3>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Name" required />
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email" required />
+          </div>
+          <div class="col-12">
+            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn cta-btn cta-btn-solid">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-white border-top">
+    <small class="muted">© <span id="year"></span> Revathi. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
