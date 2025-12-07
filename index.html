@@ -4,8 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Revathi — Portfolio</title>
+
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Site styles -->
   <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
@@ -13,8 +18,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Revathi</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <a class="navbar-brand fw-bold" href="#">Revathi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="nav" class="collapse navbar-collapse">
@@ -29,134 +34,318 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <div class="row align-items-center hero-card">
-        <!-- Left column -->
-        <div class="col-lg-6 col-md-12 p-4 text-center text-lg-start">
-          <img src="assets/photo.jpg" alt="Revathi" class="portrait mb-3" />
-          <h1>Revathi</h1>
-          <span class="role-badge">Web Designer</span>
-          <p class="mt-3 muted">
-            I craft accessible, pixel-perfect interfaces with Bootstrap and custom CSS—blending clarity, polish, and thoughtful UX.
-            I focus on modular layouts, responsive design, and seamless user experiences that feel complete and professional.
-          </p>
-          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start mt-3">
-            <a class="btn cta-btn cta-btn-solid" href="#">LinkedIn</a>
-            <a class="btn cta-btn cta-btn-outline" href="#">GitHub</a>
-            <a class="btn cta-btn cta-btn-outline" href="#">Resume</a>
+  <section class="hero-section text-white">
+    <div class="container py-5">
+      <div class="row align-items-center g-4">
+        <!-- Left: Profile -->
+        <div class="col-md-4 text-center">
+          <img src="assets/photo.jpg" alt="Revathi" class="rounded-circle profile-img" />
+          <div class="mt-3">
+            <span class="badge bg-gradient-red text-white px-3 py-2">Revathi Selvam.N</span>
           </div>
         </div>
-
-        <!-- Right column -->
-        <div class="col-lg-6 col-md-12 p-4 bg-light" id="about">
-          <h2>About</h2>
-          <p>I design and build student-focused web experiences—fast, responsive, and inclusive.</p>
-          <ul class="list-unstyled">
-            <li><strong>Location:</strong> Tiruchendur, TN, India</li>
-            <li><strong>Email:</strong> you@example.com</li>
-            <li><strong>Website:</strong> yourwebsite.com</li>
-          </ul>
+        <!-- Right: Intro -->
+        <div class="col-md-8">
+          <h1 class="display-5 fw-bold">Full Stack Developer</h1>
+          <p class="lead mt-3">
+            I am an aspiring Full Stack Developer skilled in HTML, CSS, JavaScript, React, Node.js, and SQL, passionate about creating complete end-to-end web solutions.
+          </p>
+          <div class="d-flex justify-content-md-end justify-content-center gap-3 mt-4">
+            <a href="https://www.linkedin.com/in/revathi-selvam-n-896954353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="btn btn-light btn-lg text-danger fw-bold" target="_blank" rel="noopener">
+              <i class="bi bi-linkedin me-1"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Revathiselvam0622" class="btn btn-light btn-lg text-danger fw-bold" target="_blank" rel="noopener">
+              <i class="bi bi-github me-1"></i> GitHub
+            </a>
+            <a href="assets/Revathi-Resume.pdf" class="btn btn-light btn-lg text-danger fw-bold" target="_blank" rel="noopener" download>
+              <i class="bi bi-file-earmark-arrow-down me-1"></i> Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- About -->
+<!-- About -->
+<section id="about" class="section py-5">
+  <div class="container">
+    <div class="about-card mx-auto p-4 p-md-5 shadow rounded text-center">
+      <h2 class="mb-3 fade-in">👩‍💻 About Me</h2>
+      <p class="lead slide-in-up">
+       <b>I am a fresher Full Stack Developer with a strong foundation in
+<mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>, <mark>React</mark>, <mark>Node.js</mark>, and <mark>SQL</mark>.
+I enjoy building responsive web interfaces, developing backend logic, and creating complete web applications. I continuously improve my skills through platforms like
+<mark>FreeCodeCamp</mark>, <mark>The Odin Project</mark>, <mark>Coursera</mark>, and <mark>Udemy</mark>, where I explore new technologies and work on hands-on projects to strengthen my knowledge.</b>
+      </p>
+    </div>
+  </div>
+</section>
 
   <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="card-block">
-        <h3 class="section-title">Featured Projects</h3>
-        <p class="section-subtitle">Highlights from my recent work.</p>
-
-        <!-- Project 1 -->
-        <div class="mb-4">
-          <h5 class="fw-bold mb-1">Post Management System</h5>
-          <p class="mb-2">Responsive CRUD app with pagination, tag filtering, toast notifications, and empty state illustrations.</p>
-          <div class="d-flex flex-wrap gap-2 mb-2">
-            <span class="skill-badge">React</span>
-            <span class="skill-badge">Bootstrap</span>
-            <span class="skill-badge">Axios</span>
-            <span class="skill-badge">json-server</span>
+<section id="projects" class="section py-5 bg-light">
+  <div class="container">
+    <h3 class="section-title text-center mb-4">🚀My Projects</h3>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Project Card 1 -->
+      <div class="col-md-6">
+        <div class="project-card p-4 rounded shadow-sm h-100">
+          <h5 class="fw-bold">Post Management System</h5>
+          <p class="text-muted mb-2">
+            Responsive CRUD app with pagination, tag filtering, toast notifications, and empty state illustrations.
+          </p>
+          <div class="tech-tags mb-3">
+            <span class="badge tech-badge">React</span>
+            <span class="badge tech-badge">Bootstrap</span>
+            <span class="badge tech-badge">Axios</span>
+            <span class="badge tech-badge">json-server</span>
           </div>
-          <a href="https://your-demo-link.com" class="btn cta-btn cta-btn-solid me-2" target="_blank">
-            <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
-          </a>
-          <a href="https://github.com/your-username/post-management-system" class="btn cta-btn cta-btn-outline" target="_blank">
-            <i class="bi bi-github me-1"></i> GitHub Code
-          </a>
-        </div>
-
-        <!-- Project 2 -->
-        <div>
-          <h5 class="fw-bold mb-1">Portfolio Website</h5>
-          <p class="mb-2">A responsive personal portfolio showcasing resume, LinkedIn, GitHub, and project demos.</p>
-          <div class="d-flex flex-wrap gap-2 mb-2">
-            <span class="skill-badge">HTML5</span>
-            <span class="skill-badge">CSS3</span>
-            <span class="skill-badge">Bootstrap</span>
-            <span class="skill-badge">Vite</span>
+          <div class="d-flex gap-2">
+            <a href="https://your-live-demo-link.com" target="_blank" 
+               class="btn btn-purple d-flex align-items-center gap-2">
+              <i class="bi bi-box-arrow-up-right"></i> Live Demo
+            </a>
+            <a href="https://github.com/your-repo" target="_blank" 
+               class="btn btn-outline-dark d-flex align-items-center gap-2">
+              <i class="bi bi-github"></i> GitHub Code
+            </a>
           </div>
-          <a href="https://your-portfolio-demo-link.com" class="btn cta-btn cta-btn-solid me-2" target="_blank">
-            <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
-          </a>
-          <a href="https://github.com/your-username/portfolio-project" class="btn cta-btn cta-btn-outline" target="_blank">
-            <i class="bi bi-github me-1"></i> GitHub Code
-          </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="card-block">
-        <h3 class="section-title">Skills</h3>
-        <p class="section-subtitle">Tools and stacks I use to build reliable, polished experiences.</p>
-        <div class="d-flex flex-wrap">
-          <span class="skill-badge">HTML5</span>
-          <span class="skill-badge">CSS3</span>
-          <span class="skill-badge">JavaScript</span>
-          <span class="skill-badge">Bootstrap</span>
-          <span class="skill-badge">React</span>
-          <span class="skill-badge">Python</span>
-          <span class="skill-badge">OpenCV</span>
-          <span class="skill-badge">Git</span>
+      <!-- Project Card 2 -->
+      <div class="col-md-6">
+        <div class="project-card p-4 rounded shadow-sm h-100">
+          <h5 class="fw-bold">Portfolio Website</h5>
+          <p class="text-muted mb-2">
+            A responsive personal portfolio showcasing resume, LinkedIn, GitHub, and project demos.
+          </p>
+          <div class="tech-tags mb-3">
+            <span class="badge tech-badge">HTML5</span>
+            <span class="badge tech-badge">CSS3</span>
+            <span class="badge tech-badge">Bootstrap</span>
+            <span class="badge tech-badge">Vite</span>
+          </div>
+          <div class="d-flex gap-2">
+            <a href="https://your-live-demo-link.com" target="_blank" 
+               class="btn btn-purple d-flex align-items-center gap-2">
+              <i class="bi bi-box-arrow-up-right"></i> Live Demo
+            </a>
+            <a href="https://github.com/your-repo" target="_blank" 
+               class="btn btn-outline-dark d-flex align-items-center gap-2">
+              <i class="bi bi-github"></i> GitHub Code
+            </a>
+          </div>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+  <!-- Skills (scroll-triggered animation) -->
+  <!-- Skills (scroll-triggered animation) -->
+<section id="skills" class="section py-5 bg-light">
+  <div class="container text-center">
+    <h3 class="section-title">🛠️ Skills</h3>
+    <p class="section-subtitle text-muted">Tools I use to build polished, reliable experiences.</p>
+
+    <div class="skills-wrapper d-flex flex-wrap justify-content-center gap-5 mt-4">
+      <!-- Skill Item -->
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="90">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">90%</div>
+        </div>
+        <span class="badge skill-badge mt-2">HTML5</span>
+      </div>
+
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="85">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">85%</div>
+        </div>
+        <span class="badge skill-badge mt-2">CSS3</span>
+      </div>
+
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="80">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">80%</div>
+        </div>
+        <span class="badge skill-badge mt-2">JavaScript</span>
+      </div>
+
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="75">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">75%</div>
+        </div>
+        <span class="badge skill-badge mt-2">Bootstrap</span>
+      </div>
+
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="70">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">70%</div>
+        </div>
+        <span class="badge skill-badge mt-2">React</span>
+      </div>
+
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="65">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">65%</div>
+        </div>
+        <span class="badge skill-badge mt-2">Python</span>
+      </div>
+
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="60">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">60%</div>
+        </div>
+        <span class="badge skill-badge mt-2">OpenCV</span>
+      </div>
+
+      <div class="skill-item text-center">
+        <div class="circle" data-percent="75">
+          <svg>
+            <circle cx="40" cy="40" r="35"></circle>
+            <circle cx="40" cy="40" r="35"></circle>
+          </svg>
+          <div class="percent">75%</div>
+        </div>
+        <span class="badge skill-badge mt-2">Git</span>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="card-block">
-        <h3 class="section-title">Contact</h3>
-        <form class="row g-3">
-          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Name" required />
+  <section id="contact" class="section py-5">
+  <div class="container">
+    <div class="card shadow-lg border-0 p-4 rounded-4">
+      <h3 class="section-title text-center mb-3">📬 Contact Me</h3>
+      <p class="section-subtitle text-center text-muted">
+        Let’s connect — I’d love to hear from you.
+      </p>
+      <form class="row g-3 mt-4">
+        <!-- Name -->
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text bg-light"><i class="bi bi-person"></i></span>
+            <input type="text" class="form-control" placeholder="Your Name" required />
           </div>
-          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email" required />
+        </div>
+        <!-- Email -->
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-text bg-light"><i class="bi bi-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Your Email" required />
           </div>
-          <div class="col-12">
-            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+        </div>
+        <!-- Message -->
+        <div class="col-12">
+          <div class="input-group">
+            <span class="input-group-text bg-light"><i class="bi bi-chat-dots"></i></span>
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
           </div>
-          <div class="col-12">
-            <button class="btn cta-btn cta-btn-solid">Send</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <!-- Blue Send Button -->
+        <div class="col-12 text-center">
+          <button class="btn btn-blue px-5 py-2 rounded-pill shadow-sm" type="submit">
+            <i class="bi bi-send-fill me-2"></i> Send Message
+          </button>
+        </div>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="text-center py-3 bg-white border-top">
-    <small class="muted">© <span id="year"></span> Revathi. All rights reserved.</small>
+    <small class="text-muted">© <span id="year"></span> Revathi. All rights reserved.</small>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+ <!-- Bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const aboutElements = document.querySelectorAll(".fade-in, .slide-in-up");
+
+  const aboutObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        aboutObserver.unobserve(entry.target); // animate once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  aboutElements.forEach(el => aboutObserver.observe(el));
+</script>
+
+<!-- Page scripts -->
+<script>
+  // Current year in footer
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  // Scroll-triggered animation for Skills
+  const skillsSection = document.querySelector("#skills");
+  const skillBadges = document.querySelectorAll(".skill-badge");
+  const circles = document.querySelectorAll(".circle");
+
+  const skillsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Animate badges one by one
+        skillBadges.forEach((badge, index) => {
+          setTimeout(() => {
+            badge.classList.add("animate-badge");
+          }, index * 150);
+        });
+
+        // Animate circular progress rings
+        circles.forEach(circle => {
+          const percent = circle.getAttribute("data-percent");
+          const offset = 220 - (220 * percent) / 100;
+          circle.querySelector("circle:last-child").style.strokeDashoffset = offset;
+        });
+
+        skillsObserver.unobserve(skillsSection); // run once
+      }
+    });
+  }, { threshold: 0.3 });
+
+  if (skillsSection) {
+    skillsObserver.observe(skillsSection);
+  }
+</script>
 </body>
 </html>
